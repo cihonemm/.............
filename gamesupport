@@ -129,18 +129,8 @@ UICorner_4.Parent = TextLabel_2
 
 -- Scripts:
 
-local function PSYLYI_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	wait(11)
-	script.Parent.gamesmainp:TweenPosition(UDim2.new(1.132, 0,0.316, 0))
-	wait(1)
-	script.Parent.gamesmainp:Destroy()
-	
-end
-coroutine.wrap(PSYLYI_fake_script)()
-local function ARGDJ_fake_script() -- Frame.Make GUI Draggable 
-	local script = Instance.new('LocalScript', main)
+local function SVZO_fake_script() -- gamesmainp.Make GUI Draggable 
+	local script = Instance.new('LocalScript', gamesmainp)
 
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -182,5 +172,14 @@ local function ARGDJ_fake_script() -- Frame.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(ARGDJ_fake_script)()
+coroutine.wrap(SVZO_fake_script)()
+local function PQBL_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
 
+	wait(11)
+	script.Parent.gamesmainp:TweenPosition(UDim2.new(1.132, 0,0.316, 0))
+	wait(1)
+	script.Parent.gamesmainp:Destroy()
+	
+end
+coroutine.wrap(PQBL_fake_script)()
