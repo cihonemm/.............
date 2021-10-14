@@ -179,7 +179,6 @@ local function CTDTHHW_fake_script() -- Intro.LocalScript
 	local script = Instance.new('LocalScript', Intro)
 
 	wait(2)
-	script.Parent.main.Visible = true
 	script.Parent.image.Visible = true
 	wait(0.0001)
 	script.Parent.main:TweenSizeAndPosition(UDim2.new(0, 100,0, 100), UDim2.new(0.441, 0,0.401, 0))
@@ -194,6 +193,8 @@ local function CTDTHHW_fake_script() -- Intro.LocalScript
 		script.Parent.image.ImageTransparency = i/10
 		wait()
 	end
+	wait(0.1)
+	script.Parent.main.Visible = true
 	wait(1.5)
 	script.Parent.image:TweenPosition(UDim2.new(1,0,0,0))
 	script.Parent.main:TweenSizeAndPosition(UDim2.new(0, 402,0, 256), UDim2.new(0.266, 0,0.249, 0))
