@@ -175,9 +175,10 @@ end
 coroutine.wrap(SVZO_fake_script)()
 local function PQBL_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
-
+	
+	script.Parent.gamesmainp:TweenPosition(UDim2.new(0.132, 0,0.316, 0))
 	wait(11)
-	script.Parent.gamesmainp:TweenPosition(UDim2.new(1.132, 0,0.316, 0))
+	script.Parent.gamesmainp:TweenPosition(UDim2.new(-0.132, 0,0.316, 0))
 	wait(1)
 	script.Parent.gamesmainp:Destroy()
 	
