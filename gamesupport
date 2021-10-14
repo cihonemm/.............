@@ -139,7 +139,6 @@ local function PSYLYI_fake_script() -- ScreenGui.LocalScript
 	
 end
 coroutine.wrap(PSYLYI_fake_script)()
-
 local function ARGDJ_fake_script() -- Frame.Make GUI Draggable 
 	local script = Instance.new('LocalScript', main)
 
